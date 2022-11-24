@@ -13,6 +13,10 @@
 		B7A728B8292FBD2D00C08A60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A728B6292FBD2D00C08A60 /* Main.storyboard */; };
 		B7A728BA292FBD2E00C08A60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A728B9292FBD2E00C08A60 /* Assets.xcassets */; };
 		B7A728BD292FBD2E00C08A60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A728BB292FBD2E00C08A60 /* LaunchScreen.storyboard */; };
+		B7A728C9292FC1AA00C08A60 /* CaviarDreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7A728C5292FC1AA00C08A60 /* CaviarDreams_Bold.ttf */; };
+		B7A728CA292FC1AA00C08A60 /* CaviarDreams_BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7A728C6292FC1AA00C08A60 /* CaviarDreams_BoldItalic.ttf */; };
+		B7A728CB292FC1AA00C08A60 /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7A728C7292FC1AA00C08A60 /* CaviarDreams.ttf */; };
+		B7A728CC292FC1AA00C08A60 /* CaviarDreams_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7A728C8292FC1AA00C08A60 /* CaviarDreams_Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B7A728B9292FBD2E00C08A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7A728BC292FBD2E00C08A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7A728BE292FBD2E00C08A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A728C5292FC1AA00C08A60 /* CaviarDreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Bold.ttf; sourceTree = "<group>"; };
+		B7A728C6292FC1AA00C08A60 /* CaviarDreams_BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_BoldItalic.ttf; sourceTree = "<group>"; };
+		B7A728C7292FC1AA00C08A60 /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams.ttf; sourceTree = "<group>"; };
+		B7A728C8292FC1AA00C08A60 /* CaviarDreams_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Italic.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		B7A728AF292FBD2D00C08A60 /* Mortage Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				B7A728B0292FBD2D00C08A60 /* AppDelegate.swift */,
-				B7A728B2292FBD2D00C08A60 /* SceneDelegate.swift */,
+				B7A728D0292FC1D800C08A60 /* App */,
+				B7A728CE292FC1C000C08A60 /* Assets */,
+				B7A728CD292FC1B300C08A60 /* UI */,
 				B7A728B4292FBD2D00C08A60 /* ViewController.swift */,
-				B7A728B6292FBD2D00C08A60 /* Main.storyboard */,
-				B7A728B9292FBD2E00C08A60 /* Assets.xcassets */,
-				B7A728BB292FBD2E00C08A60 /* LaunchScreen.storyboard */,
 				B7A728BE292FBD2E00C08A60 /* Info.plist */,
 			);
 			path = "Mortage Calculator";
+			sourceTree = "<group>";
+		};
+		B7A728C4292FC1AA00C08A60 /* caviar_dreams */ = {
+			isa = PBXGroup;
+			children = (
+				B7A728C5292FC1AA00C08A60 /* CaviarDreams_Bold.ttf */,
+				B7A728C6292FC1AA00C08A60 /* CaviarDreams_BoldItalic.ttf */,
+				B7A728C7292FC1AA00C08A60 /* CaviarDreams.ttf */,
+				B7A728C8292FC1AA00C08A60 /* CaviarDreams_Italic.ttf */,
+			);
+			path = caviar_dreams;
+			sourceTree = "<group>";
+		};
+		B7A728CD292FC1B300C08A60 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B7A728BB292FBD2E00C08A60 /* LaunchScreen.storyboard */,
+				B7A728B6292FBD2D00C08A60 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B7A728CE292FC1C000C08A60 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B7A728CF292FC1CD00C08A60 /* Fonts */,
+				B7A728B9292FBD2E00C08A60 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B7A728CF292FC1CD00C08A60 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B7A728C4292FC1AA00C08A60 /* caviar_dreams */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B7A728D0292FC1D800C08A60 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B7A728B0292FBD2D00C08A60 /* AppDelegate.swift */,
+				B7A728B2292FBD2D00C08A60 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +179,11 @@
 			files = (
 				B7A728BD292FBD2E00C08A60 /* LaunchScreen.storyboard in Resources */,
 				B7A728BA292FBD2E00C08A60 /* Assets.xcassets in Resources */,
+				B7A728CB292FC1AA00C08A60 /* CaviarDreams.ttf in Resources */,
 				B7A728B8292FBD2D00C08A60 /* Main.storyboard in Resources */,
+				B7A728CC292FC1AA00C08A60 /* CaviarDreams_Italic.ttf in Resources */,
+				B7A728CA292FC1AA00C08A60 /* CaviarDreams_BoldItalic.ttf in Resources */,
+				B7A728C9292FC1AA00C08A60 /* CaviarDreams_Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
