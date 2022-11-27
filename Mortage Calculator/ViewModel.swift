@@ -7,6 +7,18 @@
 
 import Foundation
 
+protocol ViewModelDelegate: AnyObject {
+    func calculatedPrice(result: Int)
+}
+
 class ViewModel {
-    func estimatedMonthResult {
+    weak var delegate: ViewModelDelegate?
+    func calculateButtonClicked(purchasePrice: Float, interestRate: Float, repaymentTime: Float) {
+        let result = purchasePrice + (interestRate * repaymentTime * 12)
+        delegate?.calculatedPrice(result: Int(result))
+    }
+
+    func roundValue(_ value: Float, step: Float) -> Float {
+        return round(value / step) * step
+    }
 }
